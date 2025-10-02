@@ -116,15 +116,14 @@
 
     <!-- page-header -->
     <div class="page-header">
-        <div class="backdrop" style="background-image: url(/assets/images/sub/bg_page_header.png);"></div>
+        <div class="backdrop" style="background-image: url(/assets/images/sub/bg_page_header_consult.png);"></div>
         <div class="container">
             <div class="v-align">
-                <h3 class="typed">법인소개</h3>
+                <h3 class="typed">상담안내</h3>
                 <nav class="breadcrumb">
                     <ol>
                         <li><a href="/"><img src="/assets/images/sub/ico_home.svg" alt=""></a></li>
-                        <li>법인소개</li>
-                        <li class="active">법인소개</li>
+                        <li class="active">상담안내</li>
                     </ol>
                 </nav>
             </div>
@@ -134,20 +133,59 @@
     <!-- content -->
     <main id="content">
         
-        <!-- lnb-tab -->
-        <nav class="lnb-tab">
+        <!-- consult-form -->
+        <article class="consult-form">
             <div class="container">
-                <ul>
-                    <li class="active"><a href="/introduction/introduce.html">법인소개</a></li>
-                    <li><a href="/introduction/">근골격계질환</a></li>
-                    <li><a href="/introduction/">소음성난청</a></li>
-                    <li><a href="/introduction/">오시는 길</a></li>
-                </ul>
+                <div class="article-header">
+                    <h3>무료상담</h3>
+                </div>
+                <div class="article-content">
+                    <p>연락처를 남겨주시면 담당자가 <b>직접</b> 상담연락 드리겠습니다.</p>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>성함</dt>
+                                <dd>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="성함을 입력해주세요">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>연락처</dt>
+                                <dd>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="연락처를 입력해주세요.">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="agree">
+                        <h4><span>(필수)</span> 개인정보 수집 및 이용동의</h4>
+                        <div class="agree-box">
+                            <p>
+                                1. 개인정보 수집 및 이용 목적 - 서비스 문의 이용 처리<br>
+                                2. 수집하는 개인정보 항목 - 회사명, 성함, 연락처<br>
+                                <b>3. 개인정보의 보유 및 이용 기간 - 서비스 문의 등록 후 3개월</b><br><br>
+                                ※ 개인정보 수집 및 이용에 대한 동의를 거부할 수 있습니다.<br>
+                                다만, 동의가 없을 경우 당 기관의 [서비스 문의하기] 서비스 신청이 불가능할 수도 있음을 알려드립니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="check-area">
+                        <input type="checkbox" id="agree-check">
+                        <label for="agree-check"><i class="icon"></i> 동의합니다</label>
+                    </div>
+                    <div class="btn-area">
+                        <button type="button" class="btn-submit">상담신청</button>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </article>
         
-        
-        <div style="width: 100%; height: 100vh; background-color: #999;"></div>
     </main>
     
     <!-- quick-consult -->

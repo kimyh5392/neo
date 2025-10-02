@@ -55,6 +55,15 @@
     }, { threshold: 0.3 }); // 섹션이 30% 이상 보일 때 실행
 
     observer.observe(document.querySelector(".process-list"));
+    
+    // 영역별 효과
+    $(window).on('scroll', function() {
+        $('.effect').each(function(index, elem) {
+            if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 2)) {
+                $(elem).addClass('show');
+            }
+        });
+    });
 
 })(jQuery);
 
@@ -98,13 +107,4 @@ var caseSwiper3 = new Swiper(".case-slider-3", {
         delay: 4000,
         disableOnInteraction: false,
     },
-});
-
-// 영역별 효과
-$(window).on('scroll', function() {
-    $('.effect').each(function(index, elem) {
-        if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 2)) {
-            $(elem).addClass('show');
-        }
-    });
 });
